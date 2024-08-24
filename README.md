@@ -32,7 +32,7 @@ API использует JWT авторизацию для контроля до
   "password": "123"
 }
 
-###Ответы:
+### Ответы:
 **201 Created:** *Пользователь успешно зарегистрирован.*
 **409 Conflict:** *Пользователь с таким именем уже существует.*
 
@@ -42,18 +42,18 @@ API использует JWT авторизацию для контроля до
 
 **Тело запроса (application/json):**
 
-```json
+``` json
 {
   "username": "123",
   "password": "123"
 }
 
-###Ответы:
+### Ответы:
 **200 OK:** *Авторизация успешна.* 
 
 Возвращается JWT токен в теле ответа:
 
-```json
+``` json
 {
   "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MjQ1MTE5NzIsImV4cCI6MTcyNDU0Nzk3Mn0.cZ844X7knD5rNSGarT4Q77X5UzkKVRP7IVLy_bbTHIzju9KgJSsuWQSNkiPSvxJCCWhMzRGcEz1fwjsJCbqDZA"
 }
@@ -68,7 +68,7 @@ API использует JWT авторизацию для контроля до
 
 **Тело запроса (application/json):**
 
-```json
+``` json
 {
   "head": "string",
   "description": "string",
@@ -93,12 +93,12 @@ API использует JWT авторизацию для контроля до
 
 *LOW* - низкий
 
-Ответы:
+### Ответы:
 **200 OK:** *Задача успешно создана.* 
 
 Возвращается объект созданной задачи:
 
-```json
+``` json
 {
   "id": 4,
   "head": "string",
@@ -117,7 +117,7 @@ API использует JWT авторизацию для контроля до
   }
 }
 
-##4.2 Редактирование задачи
+## 4.2 Редактирование задачи
 
 **PUT /tasks/edit/{id}**
 
@@ -127,7 +127,7 @@ API использует JWT авторизацию для контроля до
 
 *id* (integer): ID задачи, которую нужно отредактировать.
 
-```json
+``` json
 Тело запроса (application/json):
 
 {
