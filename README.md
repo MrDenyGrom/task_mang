@@ -14,9 +14,11 @@ API использует JWT авторизацию для контроля до
 
 **Пример:**
 
+```json
 {
   "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MjQ1MTE5NzIsImV4cCI6MTcyNDU0Nzk3Mn0.cZ844X7knD5rNSGarT4Q77X5UzkKVRP7IVLy_bbTHIzju9KgJSsuWQSNkiPSvxJCCWhMzRGcEz1fwjsJCbqDZA"
 }
+```
 
 ## 3.1 Регистрация пользователя
 
@@ -31,6 +33,7 @@ API использует JWT авторизацию для контроля до
   "username": "123",
   "password": "123"
 }
+```
 
 ### Ответы:
 **201 Created:** *Пользователь успешно зарегистрирован.*
@@ -47,6 +50,7 @@ API использует JWT авторизацию для контроля до
   "username": "123",
   "password": "123"
 }
+```
 
 ### Ответы:
 **200 OK:** *Авторизация успешна.* 
@@ -57,6 +61,7 @@ API использует JWT авторизацию для контроля до
 {
   "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MjQ1MTE5NzIsImV4cCI6MTcyNDU0Nzk3Mn0.cZ844X7knD5rNSGarT4Q77X5UzkKVRP7IVLy_bbTHIzju9KgJSsuWQSNkiPSvxJCCWhMzRGcEz1fwjsJCbqDZA"
 }
+```
 
 ## 4. Задачи
 
@@ -76,6 +81,7 @@ API использует JWT авторизацию для контроля до
   "priority": "HIGH",
   "executorUsername": "string"
 }
+```
 
 **Возможные статусы задачи:**
 
@@ -116,6 +122,7 @@ API использует JWT авторизацию для контроля до
     "password": "$2a$10$162CrmXuycy6NWg5YJlhauEB/R8XCg9SY7DpazH5dzzKyyUSCDX/a"
   }
 }
+```
 
 ## 4.2 Редактирование задачи
 
@@ -137,3 +144,4 @@ API использует JWT авторизацию для контроля до
   "priority": "MEDIUM",
   "executorUsername": "новое_имя_пользователя_исполнителя"
 }
+```
